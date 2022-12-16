@@ -1,5 +1,6 @@
 import { Container, CssBaseline, Grid, Typography } from '@mui/material';
 import Button from "components/Button"
+import {getWeather} from "apis/weather"
 
 function App() {
   return (
@@ -36,7 +37,12 @@ function App() {
               <Typography variant='h2'>MUI and React Setup</Typography>
             </Grid>
           </Grid> */}
-          <Button name={"test"}/>
+          <Button onClick={() => {
+            console.log('click')
+            getWeather("123").then((res:any) => {
+              console.log(res)
+            })
+          }} name={"test"}/>
         </Grid>
       </Container>
     </>

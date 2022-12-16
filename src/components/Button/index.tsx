@@ -1,12 +1,13 @@
 import React from "react"
-import {Button as MuiButton} from "@mui/material"
+import { Button as MuiButton } from "@mui/material"
 
-interface ButtonProp{
-  name: string
+interface ButtonProp {
+  name: string,
+  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProp> = ({name}) => {
-  return <MuiButton>{name}</MuiButton>
+const Button: React.FC<ButtonProp> = ({ name, ...rest }) => {
+  return <MuiButton {...rest}>{name}</MuiButton>
 }
 
 export default Button
