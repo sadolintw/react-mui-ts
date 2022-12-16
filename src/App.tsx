@@ -1,4 +1,5 @@
 import { Container, CssBaseline, Grid, Typography } from '@mui/material';
+import Button from "components/Button"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
           alignItems='center'
           sx={{ height: '100vh', border: '1px solid #9eff49' }}
         >
-          <Grid item container maxWidth='70vw'>
+          {/* <Grid item container maxWidth='70vw'>
             <Grid
               item
               xs={6}
@@ -34,7 +35,8 @@ function App() {
             >
               <Typography variant='h2'>MUI and React Setup</Typography>
             </Grid>
-          </Grid>
+          </Grid> */}
+          <Button name={"test"}/>
         </Grid>
       </Container>
     </>
