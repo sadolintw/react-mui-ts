@@ -7,7 +7,7 @@ import SimpleButton from '../components/SimpleButton'
 const component = 'SimpleButton'
 
 describe('SimpleButton tests', () => {
-  it(`should call ${SimpleButton} correctly`, () => {
+  it(`should call ${component} correctly`, () => {
     const { container } = render(<SimpleButton />);
     expect(container).toBeTruthy();
   })
