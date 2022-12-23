@@ -9,7 +9,7 @@
 
 - [X] Jest
 
-- [ ] Story Book
+- [X] Story Book
 
 - [ ] Theme
 
@@ -17,6 +17,11 @@
 
 - [ ] State Management
 
+
+run story book
+```
+yarn storybook
+```
 
 Ref
 
